@@ -1,0 +1,53 @@
+; === client config ===
+(config
+
+	cache-key: "706d7b600e7a5d27f429c6c7c53c79c0d13f5d3233d0108b9518e18191d50a87"
+
+	; pipez will read source files from this dir
+	; this is relative to your workspace
+	src-dir: "_source"
+
+	; pipez will put the compiled assets to this dir
+	; files in this directory will be overwritten
+	dst-dir: "_build"
+
+	; A url map will be written to this file.
+	; The file will contain the unique url and hash for each asset compiled.
+	; You can use this file to implement caching, versioning or subresource integrity.
+	url-map: "_pipez_urlmap.json"
+
+	; A local development server serving the assets
+	; Only used, when you running 'pipez dev'.
+	server-host: "127.0.0.1"
+	server-port: 8087
+	server-tls-key: ""
+	server-tls-cert: ""
+
+)
+
+(def scss (import "sass-3.4.19/scss"))
+(def jinja (import "jinja-2.8/jinja"))
+
+(defun page [a]
+	(asset a
+		(jinja
+			load-path: "templates"
+			ctx: (dict cachebust: 1)
+			(source (str "templates/" a)))))
+
+(copy "static/css/font-awesome.min.css")
+(copy "static/js/jquery-1.11.3.min.js")
+(copy "static/fonts/FontAwesome.otf")
+(copy "static/fonts/fontawesome-webfont.eot")
+(copy "static/fonts/fontawesome-webfont.svg")
+(copy "static/fonts/fontawesome-webfont.ttf")
+(copy "static/fonts/fontawesome-webfont.woff")
+
+(asset "static/css/base.css" (scss (source "static/scss/base.scss")))
+
+(page "index.html")
+(page "about.html")
+
+
+
+

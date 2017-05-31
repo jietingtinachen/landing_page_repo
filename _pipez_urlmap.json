@@ -1,0 +1,54 @@
+{
+  "assets": {
+    "about.html": {
+      "path": "about.html",
+      "hash": "46916943a88eb315b88138d0bbcead1a41996ab64284028678b1d3bfea73c2f4",
+      "integrity": "sha256-RpFpQ6iOsxW4gTjQu86tGkGZarZChAKGeLHTv+pzwvQ="
+    },
+    "index.html": {
+      "path": "index.html",
+      "hash": "5fd5c271743f91428831443130419c8759a19691d0f5d7930faf23feefb40714",
+      "integrity": "sha256-X9XCcXQ/kUKIMUQxMEGch1mhlpHQ9deTD68j/u+0BxQ="
+    },
+    "static/css/base.css": {
+      "path": "static/css/base.css",
+      "hash": "af34357a1329f9b6c3c6081b6c348d25be88a2db684d85e3e60b92a6a698c6dc",
+      "integrity": "sha256-rzQ1ehMp+bbDxggbbDSNJb6IottoTYXj5guSpqaYxtw="
+    },
+    "static/css/font-awesome.min.css": {
+      "path": "static/css/font-awesome.min.css",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/fonts/FontAwesome.otf": {
+      "path": "static/fonts/FontAwesome.otf",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/fonts/fontawesome-webfont.eot": {
+      "path": "static/fonts/fontawesome-webfont.eot",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/fonts/fontawesome-webfont.svg": {
+      "path": "static/fonts/fontawesome-webfont.svg",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/fonts/fontawesome-webfont.ttf": {
+      "path": "static/fonts/fontawesome-webfont.ttf",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/fonts/fontawesome-webfont.woff": {
+      "path": "static/fonts/fontawesome-webfont.woff",
+      "hash": "",
+      "integrity": ""
+    },
+    "static/js/jquery-1.11.3.min.js": {
+      "path": "static/js/jquery-1.11.3.min.js",
+      "hash": "",
+      "integrity": ""
+    }
+  }
+}

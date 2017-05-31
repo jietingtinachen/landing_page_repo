@@ -1,0 +1,196 @@
+@import "static/scss/_reset";
+@import "static/scss/_responsive";
+
+$BLUE: #0D5CA3;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: red;
+}
+
+$header_height: 120px;
+
+/*------------------------------*/
+body {
+	font-family:'Roboto', "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+.everything {
+	@include on-tablet-desktop {
+		padding-top: $header_height;
+	}
+}
+.frame900 {
+	margin: 0 auto; /*(horizatal center align)*/
+}
+@include on-desktop {
+	.frame900 {
+		max-width: 1150px;
+	}
+}
+@include on-tablet {
+	.frame900 {
+		max-width: 90%;
+   	}
+}
+@include on-mobile {
+	.frame900 {
+		width: 100%;
+	}
+}
+
+
+@include on-mobile {
+	.content {
+		padding-top: 66px;
+	}
+}
+
+
+.socialIcons {
+
+	vertical-align: middle;
+
+	font-weight:600;
+	font-size: 14px;
+
+	text-align: center;
+
+	.fa{
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		line-height: 23px;
+		text-align: center;
+		background:#c0bebe;
+		border-radius: 100%;
+		margin: 0 2px;
+		color: white;
+
+	}
+	.fa-dribbble{
+		background-color:#CACACA;
+	}
+	.fa-dribbble:hover{
+		background-color:#e55757;
+	}
+	.fa-instagram{
+		background-color:#CACACA;
+	}
+	.fa-instagram:hover{
+		background-color:#e66c13;
+	}
+	.fa-linkedin{
+		background-color:#CACACA;
+	}
+	.fa-linkedin:hover{
+		background-color:#1869a7;
+	}
+	.fa-github-alt{
+		background-color:#CACACA;
+	}
+	.fa-github-alt:hover{
+		background-color:#44b4b5;
+	}
+	.fa-coffee{
+		background-color:#CACACA;
+	}
+	.fa-coffee:hover{
+		background-color:#2689bc;
+	}
+	.fa-flickr{
+		background-color:#CACACA;
+	}
+	.fa-flickr:hover{
+		background-color:#eb3862;
+	}
+}
+.socialIcons-about {
+	vertical-align: middle;
+	color: #ffffff;
+	font-weight:600;
+	font-size: 14px;
+
+	.fa{
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		line-height: 23px;
+		text-align: center;
+		background:#c0bebe;
+		border-radius: 100%;
+		color: white;
+		margin: 0 2px;
+	}
+	.fa-dribbble{
+		background-color:#f37d7d;
+	}
+	.fa-dribbble:hover{
+		background-color:#e55757;
+	}
+	.fa-instagram{
+		background-color:#f5a062;
+	}
+	.fa-instagram:hover{
+		background-color:#e66c13;
+	}
+	.fa-linkedin{
+		background-color:#79afd9;
+	}
+	.fa-linkedin:hover{
+		background-color:#1869a7;
+	}
+	.fa-github-alt{
+		background-color:#73c8c9;
+	}
+	.fa-github-alt:hover{
+		background-color:#44b4b5;
+	}
+	.fa-coffee{
+		background-color:#67b3db;
+	}
+	.fa-coffee:hover{
+		background-color:#2689bc;
+	}
+	.fa-pagelines{
+		background-color:#f1a2b4;
+	}
+	.fa-pagelines:hover{
+		background-color:#eb3862;
+	}
+}
+
+.footer{
+	height: 160px;
+	border-top: 1px dotted gray;
+	padding-top: 16px;
+	font-size: 13px;
+	font-weight: 300;
+	display: block;
+	position: relative;
+	@include on-mobile {
+//		padding-top: 60px;
+		text-align: center;
+	}
+
+	.socialIcons {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 16px;
+		@include on-mobile {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+
